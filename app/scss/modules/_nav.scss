@@ -34,14 +34,13 @@ nav {
     }
     a {
       text-decoration: none;
-      font-family: $fontR;
+      font-family: $fontB;
       color: rgba(28, 32, 86, 0.502);
       transition: all 0.3s ease-in;
     }
     a:hover,
     a:focus {
       color: $colorO;
-      font-family: $fontB;
       transition: all 0.3s ease-in;
     }
   }

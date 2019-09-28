@@ -91,13 +91,12 @@ nav {
       margin-left: 3.5em; }
     nav ul a {
       text-decoration: none;
-      font-family: "fivo-sans.regular";
+      font-family: "fivo-sans.bold";
       color: rgba(28, 32, 86, 0.502);
       transition: all 0.3s ease-in; }
     nav ul a:hover,
     nav ul a:focus {
       color: #ff6a6d;
-      font-family: "fivo-sans.bold";
       transition: all 0.3s ease-in; }
   nav .nav-login {
     width: 10%;
@@ -178,7 +177,7 @@ nav {
     box-shadow: 0px 21px 23.52px 0.48px rgba(226, 88, 91, 0.29);
     color: #fff;
     font-size: 1rem;
-    font-family: "fivo-sans.light";
+    font-family: "fivo-sans.bold";
     width: 180px;
     height: 60px;
     transition: all 0.3s ease-in; }
