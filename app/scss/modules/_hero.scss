@@ -1,0 +1,105 @@
+// * {
+//     outline: 1px solid red;
+// }
+
+.hero {
+  background-image: url("../img/hero-main-blue.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 1312px;
+  //   border: 1px solid red;
+}
+.hero-a-img {
+  position: relative;
+  max-width: 1920px;
+  //   border: 1px solid red;
+  .hero-a-img-lady {
+    position: absolute;
+    right: 0;
+    img {
+      width: 100%;
+      // border: 1px solid red;
+    }
+  }
+  //   .hero-a-img-cloudlight {
+  //     position: absolute;
+  //     right: 5%;
+  //     transform: translateY(320%);
+  //     img {
+  //       width: 100%;
+  //       border: 1px solid red;
+  //     }
+  //   }
+  .hero-a-img-plantr {
+    position: absolute;
+    right: 0;
+    transform: translateY(30%);
+    img {
+      width: 100%;
+      // border: 1px solid red;
+    }
+  }
+  .hero-a-img-plantl {
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
+    img {
+      width: 100%;
+      // border: 1px solid red;
+    }
+  }
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  //   outline: 1px solid red;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%);
+  //   outline: 1px solid red;
+
+  h1 {
+    font-family: $fontB;
+    font-size: 3rem;
+    // outline: 1px solid red;
+  }
+  p {
+    max-width: 500px;
+    width: 90%;
+    font-family: $fontL;
+    font-size: 1rem;
+    color: $colorG;
+    line-height: 2em;
+    margin-top: 2em;
+  }
+  button {
+    cursor: pointer;
+    margin-top: 2em;
+    margin-right: 2em;
+    border-radius: 38px;
+    background-color: rgb(255, 106, 109);
+    box-shadow: 0px 21px 23.52px 0.48px rgba(226, 88, 91, 0.29);
+    color: #fff;
+    font-size: 1rem;
+    font-family: $fontL;
+
+    width: 180px;
+    height: 60px;
+    transition: all 0.3s ease-in;
+  }
+  button:hover,
+  button:focus {
+    background-color: transparent;
+    color: $colorO;
+    border: 1px solid $colorO;
+    transition: all 0.3s ease-in;
+  }
+}

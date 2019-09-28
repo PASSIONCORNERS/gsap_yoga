@@ -1,0 +1,190 @@
+.blue-btn {
+  border-radius: 38px;
+  background-image: -ms-linear-gradient(66deg, #21acdd 0%, #9ddae9 100%);
+  box-shadow: 0px 21px 23.52px 0.48px rgba(95, 206, 244, 0.29);
+  position: absolute;
+  left: 1330px;
+  top: 5744px;
+  width: 227px;
+  height: 77px;
+  z-index: 42; }
+
+/*----TO USE-----
+Media Query Mixins
+
+@include atiphone6 {
+  
+}
+
+@include at576 {
+
+}
+@include at768 {
+
+}
+@include at992 {
+
+}
+@include at1200 {
+
+}
+*/
+/* Start custom font */
+@font-face {
+  font-family: "fivo-sans.regular";
+  src: url("font/fivo-sans.regular.eot");
+  src: url("font/fivo-sans.regular.eot?#iefix") format("embedded-opentype"), url("font/fivo-sans.regular.woff") format("woff"), url("font/fivo-sans.regular.woff2") format("woff2"), url("font/fivo-sans.regular.ttf") format("truetype"), url("font/fivo-sans.regular.svg#pt_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "fivo-sans.light";
+  src: url("font/fivo-sans.light.eot");
+  src: url("font/fivo-sans.light.eot?#iefix") format("embedded-opentype"), url("font/fivo-sans.light.woff") format("woff"), url("font/fivo-sans.light.woff2") format("woff2"), url("font/fivo-sans.light.ttf") format("truetype"), url("font/fivo-sans.light.svg#pt_sansregular") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: "fivo-sans.bold";
+  src: url("font/fivo-sans.bold.eot");
+  src: url("font/fivo-sans.bold.eot?#iefix") format("embedded-opentype"), url("font/fivo-sans.bold.woff") format("woff"), url("font/fivo-sans.bold.woff2") format("woff2"), url("font/fivo-sans.bold.ttf") format("truetype"), url("font/fivo-sans.bold.svg#pt_sansregular") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+/* End custom font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
+
+header {
+  background: transparent;
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+  z-index: 2; }
+
+.nav-container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  transform: translateY(150%); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav .nav-logo {
+    width: 20%;
+    cursor: pointer; }
+  nav ul {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    list-style: none; }
+    nav ul li {
+      margin-left: 3.5em; }
+    nav ul a {
+      text-decoration: none;
+      font-family: "fivo-sans.regular";
+      color: rgba(28, 32, 86, 0.502);
+      transition: all 0.3s ease-in; }
+    nav ul a:hover,
+    nav ul a:focus {
+      color: #ff6a6d;
+      font-family: "fivo-sans.bold";
+      transition: all 0.3s ease-in; }
+  nav .nav-login {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end; }
+    nav .nav-login button {
+      cursor: pointer;
+      padding: 0.8em 3.5em;
+      border-radius: 25px;
+      font-family: "fivo-sans.bold";
+      color: #fff;
+      background-color: #ff6a6d;
+      transition: all 0.3s ease-in; }
+    nav .nav-login button:hover,
+    nav .nav-login button:focus {
+      background-color: transparent;
+      color: #ff6a6d;
+      border: 1px solid #ff6a6d;
+      transition: all 0.3s ease-in; }
+
+.hero {
+  background-image: url("../img/hero-main-blue.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 1312px; }
+
+.hero-a-img {
+  position: relative;
+  max-width: 1920px; }
+  .hero-a-img .hero-a-img-lady {
+    position: absolute;
+    right: 0; }
+    .hero-a-img .hero-a-img-lady img {
+      width: 100%; }
+  .hero-a-img .hero-a-img-plantr {
+    position: absolute;
+    right: 0;
+    transform: translateY(30%); }
+    .hero-a-img .hero-a-img-plantr img {
+      width: 100%; }
+  .hero-a-img .hero-a-img-plantl {
+    position: absolute;
+    left: 0;
+    transform: translateY(100%); }
+    .hero-a-img .hero-a-img-plantl img {
+      width: 100%; }
+
+.hero-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative; }
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%); }
+  .hero-content h1 {
+    font-family: "fivo-sans.bold";
+    font-size: 3rem; }
+  .hero-content p {
+    max-width: 500px;
+    width: 90%;
+    font-family: "fivo-sans.light";
+    font-size: 1rem;
+    color: rgba(28, 32, 86, 0.502);
+    line-height: 2em;
+    margin-top: 2em; }
+  .hero-content button {
+    cursor: pointer;
+    margin-top: 2em;
+    margin-right: 2em;
+    border-radius: 38px;
+    background-color: #ff6a6d;
+    box-shadow: 0px 21px 23.52px 0.48px rgba(226, 88, 91, 0.29);
+    color: #fff;
+    font-size: 1rem;
+    font-family: "fivo-sans.light";
+    width: 180px;
+    height: 60px;
+    transition: all 0.3s ease-in; }
+  .hero-content button:hover,
+  .hero-content button:focus {
+    background-color: transparent;
+    color: #ff6a6d;
+    border: 1px solid #ff6a6d;
+    transition: all 0.3s ease-in; }
