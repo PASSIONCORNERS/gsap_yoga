@@ -1,14 +1,16 @@
-// // logo
-// var content = document.getElementById("content");
-// TweenMax.fromTo(content, 2, { opacity: 0, y: 50 }, { opacity: 1, y: 0 });
-// // title
-// var content = document.getElementById("content2");
-// TweenMax.fromTo(content, 2, { opacity: 0, y: 50 }, { opacity: 1, y: 0 });
-// // desc
-// var content = document.getElementById("content3");
-// TweenMax.fromTo(content, 2, { opacity: 0, y: 50 }, { opacity: 1, y: 0 });
-// // main-bg
+// nav section
+const navSlide = () => {
+  const burger = document.querySelector(".nav-burger");
+  const nav = document.querySelector(".nav-links");
 
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("nav-burger-bar-close"); //icon
+    nav.classList.toggle("nav-links-active"); //menu
+  });
+};
+navSlide();
+
+// animation hero section
 var tl = new TimelineLite();
 tl.from("#content, #content2", 2, { y: 50, opacity: 0 }, "+=.5");
 tl.from("#content3", 2, { y: 50, opacity: 0 }, "-=1.5");
@@ -23,7 +25,7 @@ tl.from("#content10", 2, { x: 500, right: 50 }, "-=2.2");
 // tl.from("#content10", 2, { x: 500, rotation: -50 }, "-=3.3");
 
 tl.set("#content10", { x: "0", y: "30%" }) //  center the element
-  .to("#content10", 2, { x: 25, y: 0, rotation: 5, z: 20, delay: 1 }); // move it to the desired position
+  .to("#content10", 2, { x: 25, y: 0, rotation: 5, z: 20, delay: 0.5 }); // move it to the desired position
 
 // tl.from("#content10", 1, { opacity: 0 });
 // tl.to("#content10", 0.5, {
