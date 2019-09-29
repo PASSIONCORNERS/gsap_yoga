@@ -24,3 +24,17 @@ tl.from("#content10", 2, { x: 500, right: 50 }, "-=2.2");
 tl.set("#content10", { x: "0", y: "30%" }) //  center the element
   .to("#content10", 2, { x: 25, y: 0, rotation: 5, z: 20, delay: 0.5 }); // move it to the desired position
 //about1 section
+var tl2 = new TimelineLite();
+const controller = new ScrollMagic.Controller();
+
+tl2.from("#content11, #content11", 2, { y: 50, opacity: 0 }, "-=1");
+tl2.from("#content12", 2, { y: 50, opacity: 0 }, "-=1.5");
+tl2.from("#content13", 2, { y: 50, opacity: 0 }, "-=1.5");
+tl2.from("#content14", 2, { y: 50, opacity: 0 }, "-=1.5");
+tl2.from("#content15", 2, { y: 50, opacity: 0 }, "-=1.5");
+
+const scene = new ScrollMagic.Scene({
+  triggerElement: ".about1"
+})
+  .setTween(tl2)
+  .addTo(controller);
