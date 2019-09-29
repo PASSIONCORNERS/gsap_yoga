@@ -15,6 +15,7 @@
   .hero-a-img-lady {
     position: absolute;
     right: 0;
+    z-index: 2;
     img {
       width: 100%;
     }
@@ -49,6 +50,7 @@
   left: 0;
   width: 100%;
   transform: translateY(50%);
+  z-index: 3;
   h1 {
     font-family: $fontB;
     font-size: 3rem;
@@ -58,7 +60,7 @@
     width: 90%;
     font-family: $fontL;
     font-size: 1rem;
-    color: $colorG;
+    color: #000;
     line-height: 2em;
     margin-top: 2em;
   }
@@ -83,5 +85,41 @@
     color: $colorO;
     border: 1px solid $colorO;
     transition: all 0.3s ease-in;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .hero-a-img-lady {
+    z-index: 1;
+  }
+  .hero-a-img-plantr {
+    z-index: 2;
+  }
+}
+@include at992 {
+  .hero-a-img-lady {
+    z-index: 1;
+  }
+  .hero-a-img-plantr {
+    z-index: 2;
+  }
+}
+@include at1200 {
+  .hero-a-img-lady {
+    z-index: 1;
+  }
+  .hero-a-img-plantr {
+    z-index: 2;
+  }
+  .hero-content {
+    p {
+      color: $colorG;
+    }
   }
 }

@@ -66,7 +66,8 @@ header {
   height: 15vh;
   width: 100%;
   z-index: 2;
-  display: flex; }
+  display: flex;
+  z-index: 999; }
 
 .nav-container {
   max-width: 1400px;
@@ -82,7 +83,7 @@ header {
   width: 20px;
   height: 19px;
   position: absolute;
-  top: 43%;
+  top: 40%;
   right: 10px;
   cursor: pointer;
   z-index: 10; }
@@ -291,7 +292,8 @@ nav {
   max-width: 1920px; }
   .hero-a-img .hero-a-img-lady {
     position: absolute;
-    right: 0; }
+    right: 0;
+    z-index: 2; }
     .hero-a-img .hero-a-img-lady img {
       width: 100%; }
   .hero-a-img .hero-a-img-plantr {
@@ -318,7 +320,8 @@ nav {
   top: 50%;
   left: 0;
   width: 100%;
-  transform: translateY(50%); }
+  transform: translateY(50%);
+  z-index: 3; }
   .hero-content h1 {
     font-family: "fivo-sans.bold";
     font-size: 3rem; }
@@ -327,7 +330,7 @@ nav {
     width: 90%;
     font-family: "fivo-sans.light";
     font-size: 1rem;
-    color: rgba(28, 32, 86, 0.502);
+    color: #000;
     line-height: 2em;
     margin-top: 2em; }
   .hero-content button {
@@ -349,3 +352,23 @@ nav {
     color: #ff6a6d;
     border: 1px solid #ff6a6d;
     transition: all 0.3s ease-in; }
+
+@media (min-width: 768px) {
+  .hero-a-img-lady {
+    z-index: 1; }
+  .hero-a-img-plantr {
+    z-index: 2; } }
+
+@media (min-width: 992px) {
+  .hero-a-img-lady {
+    z-index: 1; }
+  .hero-a-img-plantr {
+    z-index: 2; } }
+
+@media (min-width: 1200px) {
+  .hero-a-img-lady {
+    z-index: 1; }
+  .hero-a-img-plantr {
+    z-index: 2; }
+  .hero-content p {
+    color: rgba(28, 32, 86, 0.502); } }

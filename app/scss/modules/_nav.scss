@@ -5,6 +5,7 @@ header {
   width: 100%;
   z-index: 2;
   display: flex;
+  z-index: 999;
 }
 .nav-container {
   max-width: 1400px;
@@ -20,7 +21,7 @@ header {
   width: 20px;
   height: 19px;
   position: absolute;
-  top: 43%;
+  top: 40%;
   right: 10px;
   cursor: pointer;
   z-index: 10;
