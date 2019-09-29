@@ -60,6 +60,16 @@ Media Query Mixins
 body {
   overflow-x: hidden; }
 
+h1 {
+  font-family: "fivo-sans.bold";
+  font-size: 3rem; }
+
+p {
+  font-family: "fivo-sans.light";
+  font-size: 1rem;
+  color: rgba(28, 32, 86, 0.502);
+  line-height: 2em; }
+
 header {
   background: transparent;
   position: fixed;
@@ -372,3 +382,69 @@ nav {
     z-index: 2; }
   .hero-content p {
     color: rgba(28, 32, 86, 0.502); } }
+
+.about1 {
+  text-align: center;
+  position: relative; }
+  .about1 .about1-cloud {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    visibility: hidden; }
+  .about1 h1 {
+    font-family: "fivo-sans.bold";
+    font-size: 3rem; }
+  .about1 .about1-desc {
+    padding-top: 3em;
+    font-family: "fivo-sans.light";
+    font-size: 1rem;
+    color: rgba(28, 32, 86, 0.502);
+    line-height: 2em;
+    max-width: 800px;
+    margin: 0 auto; }
+
+.about1-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8em; }
+
+.about1-block h3 {
+  font-family: "fivo-sans.bold";
+  font-size: 1.2rem; }
+
+.about1-block p {
+  margin-top: 1.5em; }
+
+@media (min-width: 768px) {
+  .about1 {
+    text-align: center;
+    position: relative; }
+    .about1 .about1-cloud {
+      visibility: visible; }
+  .about1-container {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media (min-width: 992px) {
+  .about1 {
+    text-align: center;
+    position: relative; }
+    .about1 .about1-cloud {
+      visibility: visible; }
+  .about1-container {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media (min-width: 1200px) {
+  .about1 {
+    text-align: center;
+    position: relative; }
+    .about1 .about1-cloud {
+      visibility: visible; }
+  .about1-container {
+    flex-direction: row;
+    justify-content: space-between; } }

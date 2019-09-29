@@ -6,3 +6,13 @@
 body {
   overflow-x: hidden;
 }
+h1 {
+  font-family: $fontB;
+  font-size: 3rem;
+}
+p {
+  font-family: $fontL;
+  font-size: 1rem;
+  color: $colorG;
+  line-height: 2em;
+}

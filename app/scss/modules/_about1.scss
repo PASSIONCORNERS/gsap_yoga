@@ -1,0 +1,87 @@
+.about1 {
+  text-align: center;
+  position: relative;
+  .about1-cloud {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    visibility: hidden;
+  }
+  h1 {
+    font-family: $fontB;
+    font-size: 3rem;
+  }
+  .about1-desc {
+    padding-top: 3em;
+    font-family: $fontL;
+    font-size: 1rem;
+    color: $colorG;
+    line-height: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+.about1-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8em;
+}
+.about1-block {
+  h3 {
+    font-family: $fontB;
+    font-size: 1.2rem;
+  }
+  p {
+    margin-top: 1.5em;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .about1 {
+    text-align: center;
+    position: relative;
+    .about1-cloud {
+      visibility: visible;
+    }
+  }
+  .about1-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@include at992 {
+  .about1 {
+    text-align: center;
+    position: relative;
+    .about1-cloud {
+      visibility: visible;
+    }
+  }
+  .about1-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@include at1200 {
+  .about1 {
+    text-align: center;
+    position: relative;
+    .about1-cloud {
+      visibility: visible;
+    }
+  }
+  .about1-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
