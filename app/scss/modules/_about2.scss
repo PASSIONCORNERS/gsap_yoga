@@ -36,10 +36,8 @@
   order: 2;
   //   outline: 1px solid red;
   .about2-left-img {
-    // position: relative;
-    // outline: 1px solid red;
-    svg {
-      width: 100%;
+    object {
+      width: 150%;
     }
   }
 }
@@ -82,7 +80,6 @@
       flex-direction: column;
       color: #000;
       padding-top: 10px;
-      //   justify-content: baseline;
     }
   }
 }
@@ -105,9 +102,10 @@
   .about2-left {
     width: 50%;
     order: 1;
-    img {
-      width: 100%;
-      display: block;
+    .about2-left-img {
+      object {
+        width: 140%;
+      }
     }
   }
   .about2-right {
@@ -135,9 +133,10 @@
   .about2-left {
     width: 50%;
     order: 1;
-    img {
-      width: 100%;
-      display: block;
+    .about2-left-img {
+      object {
+        width: 170%;
+      }
     }
   }
   .about2-right {
@@ -165,9 +164,10 @@
   .about2-left {
     width: 50%;
     order: 1;
-    img {
-      width: 100%;
-      display: block;
+    .about2-left-img {
+      object {
+        width: 200%;
+      }
     }
   }
   .about2-right {

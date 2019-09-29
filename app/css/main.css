@@ -482,8 +482,8 @@ nav {
   display: flex;
   width: 100%;
   order: 2; }
-  .about2-left .about2-left-img svg {
-    width: 100%; }
+  .about2-left .about2-left-img object {
+    width: 150%; }
 
 .about2-right {
   margin-top: 6em;
@@ -529,9 +529,8 @@ nav {
   .about2-left {
     width: 50%;
     order: 1; }
-    .about2-left img {
-      width: 100%;
-      display: block; }
+    .about2-left .about2-left-img object {
+      width: 140%; }
   .about2-right {
     margin-top: 0;
     width: 48%;
@@ -552,9 +551,8 @@ nav {
   .about2-left {
     width: 50%;
     order: 1; }
-    .about2-left img {
-      width: 100%;
-      display: block; }
+    .about2-left .about2-left-img object {
+      width: 170%; }
   .about2-right {
     margin-top: 0;
     width: 48%;
@@ -575,9 +573,8 @@ nav {
   .about2-left {
     width: 50%;
     order: 1; }
-    .about2-left img {
-      width: 100%;
-      display: block; }
+    .about2-left .about2-left-img object {
+      width: 200%; }
   .about2-right {
     margin-top: 0;
     width: 48%;
