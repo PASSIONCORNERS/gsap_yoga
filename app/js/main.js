@@ -39,7 +39,7 @@ const scene = new ScrollMagic.Scene({
   .setTween(tl2)
   .addTo(controller);
 
-// //about2 section
+//about2 section
 var tl3 = new TimelineLite();
 const controller2 = new ScrollMagic.Controller();
 
@@ -53,7 +53,7 @@ const scene2 = new ScrollMagic.Scene({
   .setTween(tl3)
   .addTo(controller2);
 
-// ---------------
+// ---- about2 after movement-----------
 
 document.getElementById("svg").addEventListener("load", function() {
   var doc = this.getSVGDocument();
