@@ -57,15 +57,15 @@ const scene2 = new ScrollMagic.Scene({
 
 document.getElementById("svg").addEventListener("load", function() {
   var doc = this.getSVGDocument();
-  var hand = doc.getElementById("lady-leg");
+  var leg = doc.getElementById("lady-leg");
   var plant = doc.getElementById("plant-top");
 
   tl4 = new TimelineMax();
   const controller3 = new ScrollMagic.Controller();
   // lady after movement
   tl4
-    .set(hand, { x: "1850", y: "910" })
-    .to(hand, 2, { x: 2085, y: 705, rotation: 29, z: 20, delay: 0.5 }, 3);
+    .set(leg, { x: "1850", y: "910" })
+    .to(leg, 2, { x: 2085, y: 705, rotation: 29, z: 20, delay: 0.5 }, 3);
   // plant after movement
   tl4.to(plant, 2, { x: 2550, y: 1349, rotation: 5, z: 20, delay: 0.5 }, 3);
 
