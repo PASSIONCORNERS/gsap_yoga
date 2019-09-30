@@ -593,3 +593,12 @@ nav {
     transform: translateY(90%); }
     .about2-plant-left img {
       width: 100%; } }
+
+@-moz-document url-prefix() {
+  @supports ((-webkit-animation: calc(0s)) or (animation: calc(0s))) {
+    /* Style */
+    .about2-left {
+      width: 50%;
+      order: 1; }
+      .about2-left .about2-left-img object {
+        width: 100%; } } }

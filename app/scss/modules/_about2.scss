@@ -166,6 +166,7 @@
     order: 1;
     .about2-left-img {
       object {
+        // -moz-width: 100%;
         width: 200%;
       }
     }
@@ -192,6 +193,21 @@
     transform: translateY(90%);
     img {
       width: 100%;
+    }
+  }
+}
+//for firefox
+@-moz-document url-prefix() {
+  @supports (animation: calc(0s)) {
+    /* Style */
+    .about2-left {
+      width: 50%;
+      order: 1;
+      .about2-left-img {
+        object {
+          width: 100%;
+        }
+      }
     }
   }
 }
