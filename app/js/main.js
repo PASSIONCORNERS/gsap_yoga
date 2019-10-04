@@ -115,3 +115,32 @@ document.getElementById("svg").addEventListener("load", function() {
     .setTween(tl4)
     .addTo(controller3);
 });
+
+//about3 animation
+
+var tl5 = new TimelineLite();
+const controller4 = new ScrollMagic.Controller();
+
+// tl5.TweenMax.from("#content20", 2, { x: 50, opacity: 0 });
+tl5.from("#content20", 2, { x: 50, opacity: 0 });
+// TweenMax.from("#content3", 2, { y: 50, opacity: 0 }).delay(1);
+// TweenMax.from("#content5", 2, { y: -50, opacity: 0 }).delay(1.5);
+// TweenMax.from("#content6, #content7", 2, { y: 50, opacity: 0 }).delay(1.7);
+// TweenMax.from("#content8", 2, { y: -1000, opacity: 0 }).delay(1.9);
+// TweenMax.from("#content9", 2.5, { x: -500, opacity: 0 }).delay(1.9);
+// TweenMax.from("#content10", 2, { x: 500, right: 50 }).delay(2);
+
+const scene4 = new ScrollMagic.Scene({
+  triggerElement: ".about3"
+})
+  .setTween(tl5)
+  .addTo(controller4);
+
+//second movement
+// TweenMax.to("#content10", 1, {
+//   x: -5,
+//   y: 120,
+//   right: -30,
+//   rotation: 1,
+//   z: 20
+// }).delay(4.4);

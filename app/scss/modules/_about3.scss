@@ -6,9 +6,9 @@
   position: absolute;
   //   outline: 1px solid red;
   display: inline-block;
-  transform: translateY(40%);
+  transform: translateY(10%);
   bottom: 0;
-  img {
+  .about3-cloud-img {
     max-width: 50%;
   }
 }
@@ -68,10 +68,10 @@
     margin-top: 2em;
     // transform: translateY(-20%);
     object {
-      width: 100%;
+      max-width: 100%;
       padding-left: 1em;
       height: auto;
-      // outline: 1px solid red;
+      //   outline: 1px solid red;
     }
   }
 }
@@ -92,18 +92,18 @@
     display: inline-block;
     transform: translateY(80%);
     bottom: 0;
-    img {
+    .about3-cloud-img {
       max-width: 65%;
     }
   }
-  .about3-right {
-    .about3-right-img {
-      object {
-        width: 100%;
-        padding-left: 3em;
-      }
-    }
-  }
+  //   .about3-right {
+  //     .about3-right-img {
+  //       object {
+  //         width: 100%;
+  //         padding-left: 3em;
+  //       }
+  //     }
+  //   }
 }
 @include at992 {
   .about3-container {
@@ -115,39 +115,41 @@
     display: inline-block;
     transform: translateY(40%);
     bottom: 0;
-    img {
+    .about3-cloud-img {
       max-width: 80%;
     }
   }
-  .about3-right {
-    .about3-right-img {
-      object {
-        width: 100%;
-        padding-left: 3em;
-      }
-    }
-  }
+
+  //   .about3-right {
+  //     .about3-right-img {
+  //       object {
+  //         width: 100%;
+  //         padding-left: 3em;
+  //       }
+  //     }
+  //   }
 }
 @include at1200 {
   .about3-container {
     flex-direction: row;
   }
-  //   .about3-cloud {
-  //     position: absolute;
-  //   outline: 1px solid red;
-  //     display: inline-block;
-  //     transform: translateY(40%);
-  //     bottom: 0;
-  //     img {
-  //       max-width: 100%;
-  //     }
-  //   }
-  .about3-right {
-    .about3-right-img {
-      object {
-        width: 100%;
-        padding-left: 3em;
-      }
+  .about3-cloud {
+    position: absolute;
+    // outline: 1px solid red;
+    display: inline-block;
+    transform: translateY(40%);
+    bottom: 0;
+    .about3-cloud-img {
+      max-width: 100%;
     }
   }
+
+  //   .about3-right {
+  //     .about3-right-img {
+  //       object {
+  //         width: 100%;
+  //         padding-left: 3em;
+  //       }
+  //     }
+  //   }
 }

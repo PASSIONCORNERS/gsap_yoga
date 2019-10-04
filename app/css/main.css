@@ -610,9 +610,9 @@ nav {
 .about3-cloud {
   position: absolute;
   display: inline-block;
-  transform: translateY(40%);
+  transform: translateY(10%);
   bottom: 0; }
-  .about3-cloud img {
+  .about3-cloud .about3-cloud-img {
     max-width: 50%; }
 
 .about3-container {
@@ -663,7 +663,7 @@ nav {
   .about3-right .about3-right-img {
     margin-top: 2em; }
     .about3-right .about3-right-img object {
-      width: 100%;
+      max-width: 100%;
       padding-left: 1em;
       height: auto; }
 
@@ -675,11 +675,8 @@ nav {
     display: inline-block;
     transform: translateY(80%);
     bottom: 0; }
-    .about3-cloud img {
-      max-width: 65%; }
-  .about3-right .about3-right-img object {
-    width: 100%;
-    padding-left: 3em; } }
+    .about3-cloud .about3-cloud-img {
+      max-width: 65%; } }
 
 @media (min-width: 992px) {
   .about3-container {
@@ -689,15 +686,16 @@ nav {
     display: inline-block;
     transform: translateY(40%);
     bottom: 0; }
-    .about3-cloud img {
-      max-width: 80%; }
-  .about3-right .about3-right-img object {
-    width: 100%;
-    padding-left: 3em; } }
+    .about3-cloud .about3-cloud-img {
+      max-width: 80%; } }
 
 @media (min-width: 1200px) {
   .about3-container {
     flex-direction: row; }
-  .about3-right .about3-right-img object {
-    width: 100%;
-    padding-left: 3em; } }
+  .about3-cloud {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(40%);
+    bottom: 0; }
+    .about3-cloud .about3-cloud-img {
+      max-width: 100%; } }
