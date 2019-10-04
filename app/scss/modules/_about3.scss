@@ -1,0 +1,153 @@
+.about3 {
+  margin: 8em 0;
+  position: relative;
+}
+.about3-cloud {
+  position: absolute;
+  //   outline: 1px solid red;
+  display: inline-block;
+  transform: translateY(40%);
+  bottom: 0;
+  img {
+    max-width: 50%;
+  }
+}
+.about3-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about3-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  // outline: 1px solid red;
+  h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1.3em;
+    max-width: 500px;
+  }
+  p {
+    display: flex;
+    flex-direction: column;
+    color: $colorG;
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about3-btn {
+    cursor: pointer;
+    margin-top: 3em;
+    font-family: $fontB;
+    font-size: 1.2rem;
+    color: rgb(60, 190, 241);
+    transition: 0.2s ease-in;
+    z-index: 5;
+  }
+  .about3-btn:hover {
+    color: $colorO;
+    transition: 0.2s ease-in;
+    font-weight: bold;
+  }
+}
+.about3-right {
+  display: flex;
+  width: 100%;
+  // outline: 1px solid red;
+
+  .about3-right-img {
+    margin-top: 2em;
+    // transform: translateY(-20%);
+    object {
+      width: 100%;
+      padding-left: 1em;
+      height: auto;
+      // outline: 1px solid red;
+    }
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .about3-container {
+    flex-direction: row;
+  }
+  .about3-cloud {
+    position: absolute;
+    // outline: 1px solid red;
+    display: inline-block;
+    transform: translateY(80%);
+    bottom: 0;
+    img {
+      max-width: 65%;
+    }
+  }
+  .about3-right {
+    .about3-right-img {
+      object {
+        width: 100%;
+        padding-left: 3em;
+      }
+    }
+  }
+}
+@include at992 {
+  .about3-container {
+    flex-direction: row;
+  }
+  .about3-cloud {
+    position: absolute;
+    // outline: 1px solid red;
+    display: inline-block;
+    transform: translateY(40%);
+    bottom: 0;
+    img {
+      max-width: 80%;
+    }
+  }
+  .about3-right {
+    .about3-right-img {
+      object {
+        width: 100%;
+        padding-left: 3em;
+      }
+    }
+  }
+}
+@include at1200 {
+  .about3-container {
+    flex-direction: row;
+  }
+  //   .about3-cloud {
+  //     position: absolute;
+  //   outline: 1px solid red;
+  //     display: inline-block;
+  //     transform: translateY(40%);
+  //     bottom: 0;
+  //     img {
+  //       max-width: 100%;
+  //     }
+  //   }
+  .about3-right {
+    .about3-right-img {
+      object {
+        width: 100%;
+        padding-left: 3em;
+      }
+    }
+  }
+}

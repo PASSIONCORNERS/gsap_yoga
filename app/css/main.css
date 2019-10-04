@@ -602,3 +602,102 @@ nav {
       order: 1; }
       .about2-left .about2-left-img object {
         width: 100%; } } }
+
+.about3 {
+  margin: 8em 0;
+  position: relative; }
+
+.about3-cloud {
+  position: absolute;
+  display: inline-block;
+  transform: translateY(40%);
+  bottom: 0; }
+  .about3-cloud img {
+    max-width: 50%; }
+
+.about3-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.about3-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative; }
+  .about3-left h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1.3em;
+    max-width: 500px; }
+  .about3-left p {
+    display: flex;
+    flex-direction: column;
+    color: rgba(28, 32, 86, 0.502);
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto; }
+  .about3-left .about3-btn {
+    cursor: pointer;
+    margin-top: 3em;
+    font-family: "fivo-sans.bold";
+    font-size: 1.2rem;
+    color: #3cbef1;
+    transition: 0.2s ease-in;
+    z-index: 5; }
+  .about3-left .about3-btn:hover {
+    color: #ff6a6d;
+    transition: 0.2s ease-in;
+    font-weight: bold; }
+
+.about3-right {
+  display: flex;
+  width: 100%; }
+  .about3-right .about3-right-img {
+    margin-top: 2em; }
+    .about3-right .about3-right-img object {
+      width: 100%;
+      padding-left: 1em;
+      height: auto; }
+
+@media (min-width: 768px) {
+  .about3-container {
+    flex-direction: row; }
+  .about3-cloud {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(80%);
+    bottom: 0; }
+    .about3-cloud img {
+      max-width: 65%; }
+  .about3-right .about3-right-img object {
+    width: 100%;
+    padding-left: 3em; } }
+
+@media (min-width: 992px) {
+  .about3-container {
+    flex-direction: row; }
+  .about3-cloud {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(40%);
+    bottom: 0; }
+    .about3-cloud img {
+      max-width: 80%; }
+  .about3-right .about3-right-img object {
+    width: 100%;
+    padding-left: 3em; } }
+
+@media (min-width: 1200px) {
+  .about3-container {
+    flex-direction: row; }
+  .about3-right .about3-right-img object {
+    width: 100%;
+    padding-left: 3em; } }
