@@ -117,18 +117,14 @@ document.getElementById("svg").addEventListener("load", function() {
 });
 
 //about3 animation
-
 var tl5 = new TimelineLite();
 const controller4 = new ScrollMagic.Controller();
 
-// tl5.TweenMax.from("#content20", 2, { x: 50, opacity: 0 });
-tl5.from("#content20", 2, { x: 50, opacity: 0 });
-// TweenMax.from("#content3", 2, { y: 50, opacity: 0 }).delay(1);
-// TweenMax.from("#content5", 2, { y: -50, opacity: 0 }).delay(1.5);
-// TweenMax.from("#content6, #content7", 2, { y: 50, opacity: 0 }).delay(1.7);
-// TweenMax.from("#content8", 2, { y: -1000, opacity: 0 }).delay(1.9);
-// TweenMax.from("#content9", 2.5, { x: -500, opacity: 0 }).delay(1.9);
-// TweenMax.from("#content10", 2, { x: 500, right: 50 }).delay(2);
+tl5.from("#content20", 2, { x: 50, opacity: 0 }, "-=1");
+tl5.from("#content21", 2, { x: -50, opacity: 0 }, "-=1.5");
+tl5.from("#content22", 2, { y: 50, opacity: 0 }, "-=1.8");
+tl5.from("#content23", 2, { y: 50, opacity: 0 }, "-=1.5");
+tl5.from("#content24", 2, { y: 50, opacity: 0 }, "-=1.8");
 
 const scene4 = new ScrollMagic.Scene({
   triggerElement: ".about3"
@@ -136,11 +132,26 @@ const scene4 = new ScrollMagic.Scene({
   .setTween(tl5)
   .addTo(controller4);
 
-//second movement
-// TweenMax.to("#content10", 1, {
-//   x: -5,
-//   y: 120,
-//   right: -30,
-//   rotation: 1,
-//   z: 20
-// }).delay(4.4);
+// ---- about3 after movement-----------
+
+document.getElementById("svg2").addEventListener("load", function() {
+  var doc = this.getSVGDocument();
+  var armL = doc.getElementById("left-arm");
+  var armR = doc.getElementById("right-arm");
+
+  tl6 = new TimelineMax();
+  const controller5 = new ScrollMagic.Controller();
+  // lady after movement
+  tl6
+    .set(armL, { x: "692", y: "315" })
+    .to(armL, 2, { x: 85, y: 15, rotation: 5, z: 20, delay: 1 }, 3);
+
+  // plant after movement
+  tl6.to(armR, 2, { x: 50, y: 49, rotation: 5, z: 20, delay: 1 }, 3);
+
+  const scene5 = new ScrollMagic.Scene({
+    triggerElement: ".about3"
+  })
+    .setTween(tl6)
+    .addTo(controller5);
+});
